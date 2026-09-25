@@ -1,1 +1,179 @@
 # HomeWork-3---ADTs_Stacks_Queues
+# Homework 3 — Abstract Data Types: Stacks and Queues
+
+**Name:** Shah Rayan
+**Programming Language:** Java
+**IDE / Editor:** IntelliJ IDEA
+**GitHub:** https://github.com/shahraiyan042-creator/HomeWork-3---ADTs_Stacks_Queues
+
+## Part 2 — ADT Questions
+
+### Question 1
+
+**What does ADT stand for?**
+
+ADT stands for **Abstract Data Type**.
+
+### Question 2
+
+**In your own words, what is an Abstract Data Type?**
+
+An Abstract Data Type is a way of describing what a data structure should do and what operations it should have without focusing on how it is built.
+
+### Question 3
+
+**What is the difference between an ADT and its implementation?**
+
+The ADT describes **WHAT** the data structure should do. The implementation describes **HOW** the data structure is actually built in a program.
+
+### Question 4
+
+**Can two programmers create different implementations of the same ADT? Explain your answer.**
+
+Yes. Two programmers can use different ways to build the same ADT as long as they follow the same rules and operations.
+
+### Question 5
+
+**If one programmer creates a Stack using an array and another creates a Stack using a linked list, are both still Stacks? Explain why.**
+
+Yes. They are both Stacks because they follow the same Stack behavior, which is LIFO. The array and linked list are just different ways of implementing the Stack.
+
+## Part 8 — Stack Questions
+
+### Question 6
+
+**What does LIFO mean?**
+
+LIFO means **Last In, First Out**.
+
+### Question 7
+
+**Why did 55 get removed before 15?**
+
+55 was added last, so it is at the top of the Stack. Since a Stack uses LIFO, the last item added is removed first.
+
+### Question 8
+
+**If the Stack contains A, B, C, D and D was added last, which item should pop() remove first?**
+
+`pop()` should remove **D** first.
+
+### Question 9
+
+**Give one real-world or software example where a Stack could be useful. Explain your example.**
+
+A Stack can be used for a browser's Back button. The most recently visited page is returned to first, so the pages behave like a LIFO structure.
+
+## Part 14 — Queue Questions
+
+### Question 10
+
+**What does FIFO mean?**
+
+FIFO means **First In, First Out**.
+
+### Question 11
+
+**Why was 15 removed before 55?**
+
+15 was added to the Queue first, so it is at the front. Since a Queue uses FIFO, the first item added is removed first.
+
+### Question 12
+
+**If customers enter a line in this order: Alex, Maria, John, Sarah, who should leave the Queue first?**
+
+**Alex** should leave the Queue first because Alex entered the line first.
+
+### Question 13
+
+**Give one real-world or software example where a Queue could be useful. Explain your answer.**
+
+A printer can use a Queue for print jobs. The first document sent to the printer should normally be printed first, followed by the other documents in the order they were submitted.
+
+## Part 15 — Stack vs Queue
+
+### Scenario 1 — Undo Feature
+
+**Stack**
+
+A text editor should undo the most recent action first. This follows LIFO behavior.
+
+### Scenario 2 — Printer
+
+**Queue**
+
+The first document submitted should normally print first. This follows FIFO behavior.
+
+### Scenario 3 — Browser Back Button
+
+The page that should appear first is **GitHub**.
+
+This resembles a **Stack** because the most recently visited page is returned to first when using the Back button.
+
+### Scenario 4 — Customer Service
+
+**Queue**
+
+The customer who arrived first should normally be helped first. This follows FIFO behavior.
+
+### Scenario 5 — Plates
+
+**Stack**
+
+A stack of plates represents a Stack because the last plate placed on top is normally the first plate removed.
+
+## Part 16 — Predict the Output
+
+### Question 14
+
+**What does pop() return?**
+
+`18`
+
+### Question 15
+
+**What does the final peek() return?**
+
+`22`
+
+### Question 16
+
+**What does dequeue() return?**
+
+`7`
+
+### Question 17
+
+**What does the final peek() return?**
+
+`12`
+
+## Part 17 — Compare the ADTs
+
+| Feature            | Stack           | Queue            |
+| ------------------ | --------------- | ---------------- |
+| Rule               | LIFO            | FIFO             |
+| Add operation      | push()          | enqueue()        |
+| Remove operation   | pop()           | dequeue()        |
+| View next item     | peek()          | peek()           |
+| First item removed | Last item added | First item added |
+
+## Part 18 — Connect the ADT to the Implementation
+
+### Question 18
+
+**If you implement a Stack using an array, which part is the ADT?**
+
+The Stack operations and rules, such as LIFO, `push()`, `pop()`, `peek()`, and `isEmpty()`, are the ADT.
+
+### Question 19
+
+**Which part is the implementation?**
+
+The array and the Java code used to make the Stack work are the implementation.
+
+### Question 20
+
+**If you replace the array with a linked list but keep the same Stack operations, did the ADT change? Explain.**
+
+No, the ADT did not change. The Stack still follows LIFO and has the same operations. Only the way the Stack is implemented changed.
