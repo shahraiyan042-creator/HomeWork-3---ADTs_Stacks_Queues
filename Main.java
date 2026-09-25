@@ -2,7 +2,6 @@
 import java.util.Arrays;
 
 public class Main {
-
     // --------------------
     // Stack
     // --------------------
@@ -10,6 +9,7 @@ public class Main {
         private int[] stack;
         private int top;
 
+        //No arg constructor
         public Stack() {
             stack = new int[10];
             top = -1;
@@ -34,7 +34,6 @@ public class Main {
             return top == -1;
         }
     }
-
     // --------------------
     // Queue
     // --------------------
@@ -43,6 +42,7 @@ public class Main {
         private int front;
         private int back;
 
+        //No arg Constructor
         public Queue() {
             queue = new int[10];
             front = 0;
@@ -76,10 +76,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
-        // --------------------
+        //---------------------
         // Stack Demonstration
-        // --------------------
+        //---------------------
         Stack stack = new Stack();
 
         System.out.println("STACK DEMONSTRATION");
