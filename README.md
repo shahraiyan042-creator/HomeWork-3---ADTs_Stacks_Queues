@@ -42,7 +42,7 @@ LIFO means **Last In, First Out**.
 
 ### Question 7
 
-**Why did 55 get removed before 15?
+**Why did 55 get removed before 15?**
 A Stack follows LIFO ; since 55 was added last, the last item has to be removed first.
 
 ### Question 8
@@ -86,32 +86,30 @@ A Ticket Queue System ( eg. TicketMaster) : when people form a virtual waiting l
 ### Scenario 1 — Undo Feature
 
 **Stack**
-
-A text editor should undo the most recent action first. This follows LIFO behavior.
+A text editor will undo the most recent action first. This follows LIFO behavior. Which is a Stack.
 
 ### Scenario 2 — Printer
 
 **Queue**
-
-The first document submitted should normally print first. This follows FIFO behavior.
+The first document submitted will print first. This follows FIFO behavior (Queue).
 
 ### Scenario 3 — Browser Back Button
 
 The page that should appear first is **GitHub**.
 
-This resembles a **Stack** because the most recently visited page is returned to first when using the Back button.
+This is a **Stack** because the most recent page is returned first when using the Back button.
 
 ### Scenario 4 — Customer Service
 
 **Queue**
 
-The customer who arrived first should normally be helped first. This follows FIFO behavior.
+The customer who arrived first will be helped first. This follows FIFO behavior (Queue).
 
 ### Scenario 5 — Plates
 
 **Stack**
 
-A stack of plates represents a Stack because the last plate placed on top is normally the first plate removed.
+A stack of plates represents a Stack because the last plate placed on top is removed first.
 
 ## Part 16 — Predict the Output
 
@@ -119,25 +117,25 @@ A stack of plates represents a Stack because the last plate placed on top is nor
 
 **What does pop() return?**
 
-`18`
+18 
 
 ### Question 15
 
 **What does the final peek() return?**
 
-`22`
+22
 
 ### Question 16
 
 **What does dequeue() return?**
 
-`7`
+7
 
 ### Question 17
 
 **What does the final peek() return?**
 
-`12`
+12
 
 ## Part 17 — Compare the ADTs
 
@@ -155,16 +153,15 @@ A stack of plates represents a Stack because the last plate placed on top is nor
 
 **If you implement a Stack using an array, which part is the ADT?**
 
-The Stack operations and rules, such as LIFO, `push()`, `pop()`, `peek()`, and `isEmpty()`, are the ADT.
+In a Stack, push(), pop(), peek(), and isEmpty(), are the ADT.
 
 ### Question 19
 
 **Which part is the implementation?**
-
-The array and the Java code used to make the Stack work are the implementation.
+The array and the code used to make the Stack work as intended are the implementation.
 
 ### Question 20
 
 **If you replace the array with a linked list but keep the same Stack operations, did the ADT change? Explain.**
 
-No, the ADT did not change. The Stack still follows LIFO and has the same operations. Only the way the Stack is implemented changed.
+No, the ADT did not change. The Stack still follows LIFO and has the same operations. Only the implementation  of the Stack changes.
