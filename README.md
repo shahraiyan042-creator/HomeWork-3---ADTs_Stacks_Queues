@@ -1,4 +1,4 @@
-# HomeWork-3---ADTs_Stacks_Queues
+
 # Homework 3 — Abstract Data Types: Stacks and Queues
 
 **Name:** Shah Rayan
@@ -10,33 +10,27 @@
 
 ### Question 1
 
-**What does ADT stand for?**
-
-ADT stands for **Abstract Data Type**.
+ADT means **Abstract Data Type**.
 
 ### Question 2
 
-**In your own words, what is an Abstract Data Type?**
-
-An Abstract Data Type is a way of describing what a data structure should do and what operations it should have without focusing on how it is built.
+An Abstract Data Type is a blueprint or interface which specifies what the data structure does.
 
 ### Question 3
 
 **What is the difference between an ADT and its implementation?**
 
-The ADT describes **WHAT** the data structure should do. The implementation describes **HOW** the data structure is actually built in a program.
+The ADT describes what the data structure does . While, The implementation describes how the data structure is actually built in a program.
 
 ### Question 4
 
 **Can two programmers create different implementations of the same ADT? Explain your answer.**
 
-Yes. Two programmers can use different ways to build the same ADT as long as they follow the same rules and operations.
+Yes. Two programmers can use different ways to build the same ADT. For example, programmers can implement queue using a fixed size array(front and back pointers to insert/remove) or they might use a singly linked list(head and tail nodes).Both are implementing a queue using 2 different ways.
 
 ### Question 5
 
-**If one programmer creates a Stack using an array and another creates a Stack using a linked list, are both still Stacks? Explain why.**
-
-Yes. They are both Stacks because they follow the same Stack behavior, which is LIFO. The array and linked list are just different ways of implementing the Stack.
+Yes. They are both Stacks because they follow the same Stack behavior, which is LIFO(Last In First Out). The array and linked list are just different ways of implementing the Stack.
 
 ## Part 8 — Stack Questions
 
@@ -48,21 +42,20 @@ LIFO means **Last In, First Out**.
 
 ### Question 7
 
-**Why did 55 get removed before 15?**
-
-55 was added last, so it is at the top of the Stack. Since a Stack uses LIFO, the last item added is removed first.
+**Why did 55 get removed before 15?
+A Stack follows LIFO ; since 55 was added last, the last item has to be removed first.
 
 ### Question 8
 
 **If the Stack contains A, B, C, D and D was added last, which item should pop() remove first?**
 
-`pop()` should remove **D** first.
+pop() should remove D first since it was added last.
 
 ### Question 9
 
 **Give one real-world or software example where a Stack could be useful. Explain your example.**
 
-A Stack can be used for a browser's Back button. The most recently visited page is returned to first, so the pages behave like a LIFO structure.
+A Stack can be used for an undo button in a text editor like google docs/ word. The most recent change is pushed onto a stack and pressing undo pops/reverses the most recent action.
 
 ## Part 14 — Queue Questions
 
@@ -75,20 +68,18 @@ FIFO means **First In, First Out**.
 ### Question 11
 
 **Why was 15 removed before 55?**
-
-15 was added to the Queue first, so it is at the front. Since a Queue uses FIFO, the first item added is removed first.
+A Queue follows FIFO , meaning the front item is removed first. In this case, 15 was added to the queue first so the first added item is removed first.
 
 ### Question 12
 
 **If customers enter a line in this order: Alex, Maria, John, Sarah, who should leave the Queue first?**
-
-**Alex** should leave the Queue first because Alex entered the line first.
+It follows a FIFO structure. **Alex** should leave the Queue first because Alex entered the line first.
 
 ### Question 13
 
 **Give one real-world or software example where a Queue could be useful. Explain your answer.**
 
-A printer can use a Queue for print jobs. The first document sent to the printer should normally be printed first, followed by the other documents in the order they were submitted.
+A Ticket Queue System ( eg. TicketMaster) : when people form a virtual waiting line for buying concert tickets, the system processes the ticket purchase strictly in the order people joined the queue to ensure fair access.
 
 ## Part 15 — Stack vs Queue
 
