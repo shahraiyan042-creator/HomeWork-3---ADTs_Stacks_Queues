@@ -1,83 +1,89 @@
-
-import java.util.Arrays;
-
 public class Main {
-    // --------------------
-    // Stack
-    // --------------------
+
+    // =========================
+    // STACK
+    // =========================
     static class Stack {
-        private int[] stack;
-        private int top;
 
-        //No arg constructor
-        public Stack() {
-            stack = new int[10];
-            top = -1;
-        }
+        int[] stack = new int[10];
+        int top = -1;
 
+        // Add an item to the stack
         public void push(int value) {
-            top++;
+            top = top + 1;
             stack[top] = value;
         }
 
+        // Remove the top item = LIFO
         public int pop() {
             int value = stack[top];
-            top--;
+            top = top - 1;
             return value;
         }
 
+        // Look at the top item = LIFO
         public int peek() {
             return stack[top];
         }
 
+        // Check if the stack is empty
         public boolean isEmpty() {
             return top == -1;
         }
     }
-    // --------------------
-    // Queue
-    // --------------------
+
+
+    // =========================
+    // QUEUE
+    // =========================
     static class Queue {
-        private int[] queue;
-        private int front;
-        private int back;
 
-        //No arg Constructor
-        public Queue() {
-            queue = new int[10];
-            front = 0;
-            back = 0;
-        }
+        int[] queue = new int[10];
+        int front = 0;
+        int back = 0;
 
+        // Add an item to the queue = FIFO
         public void enqueue(int value) {
             queue[back] = value;
-            back++;
+            back = back + 1;
         }
 
+        // Remove the first item = FIFO
         public int dequeue() {
+
             int value = queue[front];
 
-            // Move the remaining items forward
+            // Move everything one position to the left
             for (int i = 0; i < back - 1; i++) {
                 queue[i] = queue[i + 1];
             }
 
-            back--;
+            back = back - 1;
+
             return value;
         }
 
+        // Look at the first item = FIFO
         public int peek() {
             return queue[front];
         }
 
+        // Check if the queue is empty
         public boolean isEmpty() {
             return back == 0;
         }
     }
+
+
+    // =========================
+    // MAIN
+    // =========================
     public static void main(String[] args) {
-        //---------------------
-        // Stack Demonstration
-        //---------------------
+
+        // -------------------------
+        // STACK DEMONSTRATION
+        // -------------------------
+
         Stack stack = new Stack();
 
         System.out.println("STACK DEMONSTRATION");
@@ -118,13 +124,14 @@ public class Main {
         System.out.println("Is Stack empty?");
         System.out.println(stack.isEmpty());
 
-        System.out.println();
 
-        // --------------------
-        // Queue Demonstration
-        // --------------------
+        // -------------------------
+        // QUEUE DEMONSTRATION
+        // -------------------------
+
         Queue queue = new Queue();
 
+        System.out.println();
         System.out.println("QUEUE DEMONSTRATION");
         System.out.println("Adding:");
 
@@ -163,7 +170,5 @@ public class Main {
         System.out.println("Is Queue empty?");
         System.out.println(queue.isEmpty());
     }
-
-    
 }
 
