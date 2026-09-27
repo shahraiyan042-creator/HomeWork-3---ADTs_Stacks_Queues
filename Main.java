@@ -1,7 +1,7 @@
 public class Main {
 
     // =========================
-    // STACK
+    // STACK Methods
     // =========================
     static class Stack {
 
@@ -34,7 +34,7 @@ public class Main {
 
 
     // =========================
-    // QUEUE
+    // QUEUE Methods
     // =========================
     static class Queue {
 
@@ -79,7 +79,6 @@ public class Main {
     // MAIN
     // =========================
     public static void main(String[] args) {
-
         // -------------------------
         // STACK DEMONSTRATION
         // -------------------------
